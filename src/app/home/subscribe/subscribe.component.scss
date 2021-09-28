@@ -1,0 +1,52 @@
+@import '../../../styles.scss';
+.subscribe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left {
+    background-color: rgba(187, 191, 202, 1);
+    height: 500px;
+    font-family: $title-font;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    background-color: rgba(232, 232, 232, 1);
+    height: 500px;
+    text-align: center;
+    font-family: $title-font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 5px 10px
+}
+button {
+    width: 100%;
+    margin: 10px auto;
+    background-color: transparent;
+    font-family: $main-font;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px
+}
+@media screen and (max-width: 800px) {
+    .subscribe {
+        margin-top: 30px;
+        display: block;
+    }
+    .left {
+        display: none;
+        height: fit-content !important;
+        margin-top: 30px
+    }
+    button {width: 90%}
+    input {width: 80%}
+}
